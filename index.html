@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Portfolio – Data Science & Computer Science</title>
+    <meta name="description" content="Portfolio of a Data Science & Computer Science student: projects, skills, experience, and contact." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/avatar.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">
+          <img class="brand-avatar" src="assets/img/avatar.svg" alt="Avatar" />
+          <div class="brand-text">
+            <span class="brand-name">Your Name</span>
+            <span class="brand-tag">Data Science & CS Student</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1>Hi, I’m <span class="accent">Your Name</span>.</h1>
+            <p>
+              I’m a Data Science & Computer Science student focused on machine learning,
+              data engineering, and scalable systems. I love turning data into products
+              and building tools that help people make better decisions.
+            </p>
+            <div class="hero-cta">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Contact</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img src="assets/img/avatar.svg" alt="Portrait" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            I’m currently studying CS with a concentration in Data Science. My interests
+            include machine learning, NLP, reinforcement learning, distributed systems,
+            and developer tooling. I enjoy clean design, reliable infrastructure, and
+            reproducible research.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="chip-group">
+            <div class="chip">Python</div>
+            <div class="chip">PyTorch</div>
+            <div class="chip">TensorFlow</div>
+            <div class="chip">scikit-learn</div>
+            <div class="chip">Pandas</div>
+            <div class="chip">SQL</div>
+            <div class="chip">Airflow</div>
+            <div class="chip">Docker</div>
+            <div class="chip">Linux</div>
+            <div class="chip">Bash</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">TypeScript</div>
+            <div class="chip">React</div>
+            <div class="chip">Node.js</div>
+            <div class="chip">Git</div>
+            <div class="chip">C++</div>
+            <div class="chip">Rust</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Projects</h2>
+            <div class="filters" role="toolbar" aria-label="Project filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="ml">ML</button>
+              <button class="filter-btn" data-filter="nlp">NLP</button>
+              <button class="filter-btn" data-filter="rl">RL</button>
+              <button class="filter-btn" data-filter="systems">Systems</button>
+              <button class="filter-btn" data-filter="compilers">Compilers</button>
+              <button class="filter-btn" data-filter="data">Data</button>
+            </div>
+          </div>
+
+          <div class="grid projects-grid">
+            <article class="card project" data-tags="ml">
+              <div class="card-media thumb ml"></div>
+              <div class="card-body">
+                <h3>Image Classification with CNNs</h3>
+                <p>Built and trained CNNs in PyTorch for CIFAR-10; achieved >90% accuracy with augmentation and cosine LR schedules.</p>
+                <div class="chip-group small">
+                  <div class="chip">PyTorch</div>
+                  <div class="chip">CNN</div>
+                  <div class="chip">CIFAR-10</div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a href="#" aria-label="GitHub repo">GitHub</a>
+                <a href="#" aria-label="Live demo">Demo</a>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="nlp ml">
+              <div class="card-media thumb nlp"></div>
+              <div class="card-body">
+                <h3>Spam Detection with Naive Bayes</h3>
+                <p>Implemented classic spam classifier; explored TF-IDF, character n-grams, and evaluated with ROC/PR curves.</p>
+                <div class="chip-group small">
+                  <div class="chip">scikit-learn</div>
+                  <div class="chip">TF-IDF</div>
+                  <div class="chip">Naive Bayes</div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a href="#">GitHub</a>
+                <a href="#">Report</a>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="rl ml">
+              <div class="card-media thumb rl"></div>
+              <div class="card-body">
+                <h3>Reinforcement Learning for CartPole</h3>
+                <p>Trained DQN and PPO agents; compared sample efficiency and stability with different exploration strategies.</p>
+                <div class="chip-group small">
+                  <div class="chip">Gymnasium</div>
+                  <div class="chip">DQN</div>
+                  <div class="chip">PPO</div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a href="#">GitHub</a>
+                <a href="#">Demo</a>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="systems">
+              <div class="card-media thumb systems"></div>
+              <div class="card-body">
+                <h3>Distributed Systems: Raft Simulation</h3>
+                <p>Implemented leader election and log replication; fault injection and visualization for teaching consensus.</p>
+                <div class="chip-group small">
+                  <div class="chip">Go</div>
+                  <div class="chip">Raft</div>
+                  <div class="chip">Visualization</div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a href="#">GitHub</a>
+                <a href="#">Docs</a>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="compilers">
+              <div class="card-media thumb compilers"></div>
+              <div class="card-body">
+                <h3>Compiler Frontend in Rust</h3>
+                <p>Built lexer and parser for a mini-language; produced typed AST and basic semantic checks.</p>
+                <div class="chip-group small">
+                  <div class="chip">Rust</div>
+                  <div class="chip">Parsing</div>
+                  <div class="chip">AST</div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a href="#">GitHub</a>
+                <a href="#">Docs</a>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="data ml">
+              <div class="card-media thumb data"></div>
+              <div class="card-body">
+                <h3>SQL Analytics on NYC Taxi Data</h3>
+                <p>Built an ELT pipeline and dashboards; optimized queries with partitioning and clustering.</p>
+                <div class="chip-group small">
+                  <div class="chip">SQL</div>
+                  <div class="chip">dbt</div>
+                  <div class="chip">BI</div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a href="#">GitHub</a>
+                <a href="#">Dashboard</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <h2>Experience</h2>
+          <ol class="timeline">
+            <li>
+              <div class="timeline-head">
+                <span class="role">Data Science Intern</span>
+                <span class="period">Jun 2024 – Aug 2024</span>
+              </div>
+              <div class="timeline-body">
+                <p>Shipped a churn prediction model; improved recall by 12% at fixed precision and deployed batch inference.</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-head">
+                <span class="role">Teaching Assistant – Algorithms</span>
+                <span class="period">Jan 2024 – May 2024</span>
+              </div>
+              <div class="timeline-body">
+                <p>Led weekly recitations; authored problem sets on graphs, DP, and amortized analysis.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="publications" class="section">
+        <div class="container">
+          <h2>Publications</h2>
+          <ul class="pubs">
+            <li>
+              <span class="pub-title">Sample Poster Title</span>
+              <span class="pub-venue">University Research Symposium, 2024</span>
+              <a href="#">PDF</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="awards" class="section">
+        <div class="container">
+          <h2>Awards</h2>
+          <ul class="awards">
+            <li>Dean’s List (all semesters)</li>
+            <li>Hackathon Winner – Best Data Science Project</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>Open to internships and research collaborations. The fastest way to reach me:</p>
+          <ul class="contact-list">
+            <li>Email: <a href="mailto:you@university.edu">you@university.edu</a></li>
+            <li>GitHub: <a href="https://github.com/yourhandle" target="_blank" rel="noreferrer noopener">github.com/yourhandle</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noreferrer noopener">linkedin.com/in/yourhandle</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Your Name</span>
+        <a href="#hero">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <noscript>
+      <div class="noscript">This site works best with JavaScript enabled (for theme + filters).</div>
+    </noscript>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+  </html>
+
